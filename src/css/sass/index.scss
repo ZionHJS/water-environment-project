@@ -28,6 +28,7 @@ body .navbar-container{
     align-items: center;
 
     img{
+       height:81%;
        left:px2rem(30);
        float:left;
        margin:0 px2rem(30);
@@ -38,10 +39,96 @@ body .navbar-container{
         float:left;
     }
     }
+
+    .skewbox{
+        height:px2rem(105);
+        width:px2rem(66);
+        transform:skew(-30deg, 0);
+        background:#1c2f4e;
+        border-left:px2rem(3) solid #1f8bc8;
+        border-right:px2rem(3) solid #1f8bc8;
+        box-sizing:border-box;
+        position:absolute;
+        top:px2rem(-3);
+        left:px2rem(750);
+    }
+
     .nav-options{
         height:100%;
         // background:red;
-        float:left;
-        color:#1f8bc8;
+        position:absolute;
+        margin-left:px2rem(900);
+        color:#1cb8ff;
+        // background:red;
+        display:flex;
+        justify-content:space-around;
+        align-items: center;
+        font-size:px2rem(30);
+        font-weight: 450;
+        .option-item{
+            margin:0 px2rem(21);
+        }
+    }
+
+    // Triangle
+    .sanjiao-nav {
+        width: 0;
+        height: 0;
+        border-bottom: px2rem(42) solid #1c2f4e;
+        border-right: px2rem(42) solid transparent;
+        position: absolute;
+        bottom:px2rem(-6);
+        left:px2rem(-2);
+    
+    }
+    .sanjiao-b-nav {
+        width: 0;
+        height: 0;
+        border-bottom: px2rem(42) solid #1f8bc8;
+        border-right: px2rem(42) solid transparent;
+        position: absolute;
+        bottom:px2rem(-2);
+        left:px2rem(0);
+    }
+    // Triangle -teverse
+    .sanjiao-nav-t {
+        width: 0;
+        height: 0;
+        border-top: px2rem(42) solid #1c2f4e;
+        border-left: px2rem(42) solid transparent;
+        position: absolute;
+        top:px2rem(-6);
+        right:px2rem(-2);
+    
+    }
+    .sanjiao-t-nav {
+        width: 0;
+        height: 0;
+        border-top: px2rem(42) solid #1f8bc8;
+        border-left: px2rem(42) solid transparent;
+        position: absolute;
+        top:px2rem(-2);
+        right:px2rem(0);
+    }
+
+    .trapezoid {
+        position: absolute;
+        bottom:-2px;
+        left:90px;
+        width: 140px;
+        border-width: 10px 6px 0;
+        border-style: solid;
+        border-color: #1c2f4e transparent;
+        box-shadow: 0px 4px 8px  #7ebdbf inset;
+    }
+    .trapezoid-b {
+        position: absolute;
+        bottom: 0px;
+        left: 90px;
+        width: 140px;
+        border-width: 10px 6px 0;
+        border-style: solid;
+        border-color: #1f8bc8 transparent;
+        box-shadow: 0px 4px 8px #7ebdbf inset;
     }
 }
