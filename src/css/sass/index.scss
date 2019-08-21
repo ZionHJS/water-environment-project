@@ -1,2 +1,47 @@
 @charset "UTF-8";
-@import '_base.scss'; 
+@import './_base.scss'; 
+@import './px2rem.scss';
+
+$designWidth:960;
+
+html,body
+{
+    padding:0;
+    margin: 0;
+    width:100%;
+    height:100%;
+    background-color:  #1c2f4e;
+	/*border:1px solid red;*/
+}
+body .navbar-container{
+    height:px2rem(105);
+    margin:px2rem(9) px2rem(60);
+    box-shadow: 0 0 px2rem(60) rgba(0, 204, 204, .75) inset; 
+    border:px2rem(3) solid #1f8bc8;
+    position:relative;
+
+    .logo-title{
+    height:100%;
+    float:left;
+    // background-color:red;
+    display:flex;
+    align-items: center;
+
+    img{
+       left:px2rem(30);
+       float:left;
+       margin:0 px2rem(30);
+    }
+    h3{
+        color:white;
+        font-size:px2rem(33);
+        float:left;
+    }
+    }
+    .nav-options{
+        height:100%;
+        // background:red;
+        float:left;
+        color:#1f8bc8;
+    }
+}

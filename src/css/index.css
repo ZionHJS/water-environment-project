@@ -1,0 +1,41 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1c2f4e;
+  /*border:1px solid red;*/
+}
+
+body .navbar-container {
+  height: 1.75rem;
+  margin: 0.15rem 1rem;
+  box-shadow: 0 0 1rem rgba(0, 204, 204, 0.75) inset;
+  border: 0.05rem solid #1f8bc8;
+  position: relative;
+}
+
+body .navbar-container .logo-title {
+  height: 100%;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+body .navbar-container .logo-title img {
+  left: 0.5rem;
+  float: left;
+  margin: 0 0.5rem;
+}
+
+body .navbar-container .logo-title h3 {
+  color: white;
+  font-size: 0.55rem;
+  float: left;
+}
+
+body .navbar-container .nav-options {
+  height: 100%;
+  float: left;
+  color: #1f8bc8;
+}
