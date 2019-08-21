@@ -106,22 +106,22 @@ body .navbar-container .sanjiao-t-nav {
 
 body .navbar-container .trapezoid {
   position: absolute;
-  bottom: -2px;
-  left: 90px;
-  width: 140px;
-  border-width: 10px 6px 0;
-  border-style: solid;
-  border-color: #1c2f4e transparent;
-  box-shadow: 0px 4px 8px  #7ebdbf inset;
+  bottom: -0.06667rem;
+  left: 2.68333rem;
+  width: 4.16667rem;
+  border-left: 0.35rem solid transparent;
+  border-right: 0.35rem solid transparent;
+  border-bottom: 0.35rem solid #1c2f4e;
+  box-shadow: 0 0.1rem 0.23333rem #7ebdbf inset;
 }
 
 body .navbar-container .trapezoid-b {
   position: absolute;
-  bottom: 0px;
-  left: 90px;
-  width: 140px;
-  border-width: 10px 6px 0;
-  border-style: solid;
-  border-color: #1f8bc8 transparent;
-  box-shadow: 0px 4px 8px #7ebdbf inset;
+  bottom: 0;
+  left: 2.66667rem;
+  width: 4.23333rem;
+  border-left: 0.35rem solid transparent;
+  border-right: 0.35rem solid transparent;
+  border-bottom: 0.35rem solid #1f8bc8;
+  box-shadow: 0 0.1rem 0.23333rem #7ebdbf inset;
 }

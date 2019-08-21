@@ -13,6 +13,7 @@ html,body
     background-color:  #1c2f4e;
 	/*border:1px solid red;*/
 }
+//navbar-container
 body .navbar-container{
     height:px2rem(105);
     margin:px2rem(9) px2rem(60);
@@ -111,24 +112,28 @@ body .navbar-container{
         right:px2rem(0);
     }
 
-    .trapezoid {
+    //Trapezoid
+    .trapezoid{
         position: absolute;
-        bottom:-2px;
-        left:90px;
-        width: 140px;
-        border-width: 10px 6px 0;
-        border-style: solid;
-        border-color: #1c2f4e transparent;
-        box-shadow: 0px 4px 8px  #7ebdbf inset;
+        bottom:px2rem(-4);
+        left:px2rem(161);
+        width: px2rem(250);
+        border-left:px2rem(21) solid transparent;
+        border-right:px2rem(21)solid transparent;
+        border-bottom:px2rem(21)solid #1c2f4e;
+        box-shadow: 0 px2rem(6) px2rem(14)  #7ebdbf inset;
     }
-    .trapezoid-b {
+    .trapezoid-b{
         position: absolute;
-        bottom: 0px;
-        left: 90px;
-        width: 140px;
-        border-width: 10px 6px 0;
-        border-style: solid;
-        border-color: #1f8bc8 transparent;
-        box-shadow: 0px 4px 8px #7ebdbf inset;
+        bottom: 0;
+        left: px2rem(160);
+        width: px2rem(254);
+        border-left:px2rem(21) solid transparent;
+        border-right:px2rem(21) solid transparent;
+        border-bottom:px2rem(21) solid #1f8bc8;
+        box-shadow: 0 px2rem(6) px2rem(14)  #7ebdbf inset;
     }
 }
+//content-container
+
+
