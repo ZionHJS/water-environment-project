@@ -135,5 +135,41 @@ body .navbar-container{
     }
 }
 //content-container
-
+.content-container{
+    height:100%;
+    width:100%;
+    display:block;
+    padding:0 px2rem(45);
+    // background-color:#ccc;
+    .content-l, .content-m, .content-r{
+        height:100%;
+        float:left;
+        padding: 0;
+        margin: 0;
+        // background-color:red;
+    }
+    .content-l{
+        width:26%;
+        .l-content-t{
+            height:33%;
+            background-color:yellow;
+        }
+        .l-content-m{
+            height:33%;
+            background-color:red;
+        }
+        .l-content-b{
+            height:33%;
+            background-color:blue;
+        }
+    }
+    .content-m{
+        width:48%;
+        background-color:purple;
+    }
+    .content-r{
+        width:26%;
+        background-color:green;
+    }
+}
 
