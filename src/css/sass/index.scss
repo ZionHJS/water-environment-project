@@ -20,6 +20,7 @@ body .navbar-container{
     box-shadow: 0 0 px2rem(60) rgba(0, 204, 204, .75) inset; 
     border:px2rem(3) solid #1f8bc8;
     position:relative;
+    display:block;
 
     .logo-title{
     height:100%;
@@ -136,40 +137,87 @@ body .navbar-container{
 }
 //content-container
 .content-container{
-    height:100%;
+    height:px2rem(1550);
     width:100%;
     display:block;
-    padding:0 px2rem(45);
+    padding:px2rem(24) px2rem(45);
     // background-color:#ccc;
     .content-l, .content-m, .content-r{
         height:100%;
         float:left;
-        padding: 0;
-        margin: 0;
+        padding:0;
+        margin:0;
         // background-color:red;
     }
     .content-l{
-        width:26%;
+        width:27%;
+        padding-right:px2rem(30);
         .l-content-t{
-            height:33%;
+            height:32%;
             background-color:yellow;
+            box-sizing:content-box;
         }
         .l-content-m{
-            height:33%;
+            height:32%;
             background-color:red;
+            box-sizing:content-box;
+            margin:3% 0;
         }
         .l-content-b{
-            height:33%;
+            height:32%;
             background-color:blue;
+            box-sizing:content-box;
         }
     }
     .content-m{
-        width:48%;
-        background-color:purple;
+        width:46%;
+        // background-color:purple;
+        .m-content-t{
+            width:100%;
+            height:49%;
+            background-color:skyblue;
+            
+        }
+        .m-content-b{
+            width:100%;
+            height:51%;
+            // background-color:sandybrown;
+            padding-top:2%;
+            .m-content-b-l{
+                width:49%;
+                height:100%;
+                margin-right:2%;
+                background-color:slateblue;
+                float:left;
+            }
+            .m-content-b-r{
+                width:49%;
+                height:100%;
+                background-color:aquamarine;
+                float:left;
+            }
+        }
     }
     .content-r{
-        width:26%;
-        background-color:green;
+        width:27%;
+        // background-color:green;
+        padding-left:px2rem(30);
+        .r-content-t{
+            height:32%;
+            background-color:yellow;
+            box-sizing:content-box;
+        }
+        .r-content-m{
+            height:32%;
+            background-color:red;
+            box-sizing:content-box;
+            margin:3% 0;
+        }
+        .r-content-b{
+            height:32%;
+            background-color:blue;
+            box-sizing:content-box;
+        }
     }
 }
 

@@ -14,6 +14,7 @@ body .navbar-container {
           box-shadow: 0 0 1rem rgba(0, 204, 204, 0.75) inset;
   border: 0.05rem solid #1f8bc8;
   position: relative;
+  display: block;
 }
 
 body .navbar-container .logo-title {
@@ -141,10 +142,10 @@ body .navbar-container .trapezoid-b {
 }
 
 .content-container {
-  height: 100%;
+  height: 25.83333rem;
   width: 100%;
   display: block;
-  padding: 0 0.75rem;
+  padding: 0.4rem 0.75rem;
 }
 
 .content-container .content-l, .content-container .content-m, .content-container .content-r {
@@ -155,31 +156,87 @@ body .navbar-container .trapezoid-b {
 }
 
 .content-container .content-l {
-  width: 26%;
+  width: 27%;
+  padding-right: 0.5rem;
 }
 
 .content-container .content-l .l-content-t {
-  height: 33%;
+  height: 32%;
   background-color: yellow;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .content-container .content-l .l-content-m {
-  height: 33%;
+  height: 32%;
   background-color: red;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 3% 0;
 }
 
 .content-container .content-l .l-content-b {
-  height: 33%;
+  height: 32%;
   background-color: blue;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .content-container .content-m {
-  width: 48%;
-  background-color: purple;
+  width: 46%;
+}
+
+.content-container .content-m .m-content-t {
+  width: 100%;
+  height: 49%;
+  background-color: skyblue;
+}
+
+.content-container .content-m .m-content-b {
+  width: 100%;
+  height: 51%;
+  padding-top: 2%;
+}
+
+.content-container .content-m .m-content-b .m-content-b-l {
+  width: 49%;
+  height: 100%;
+  margin-right: 2%;
+  background-color: slateblue;
+  float: left;
+}
+
+.content-container .content-m .m-content-b .m-content-b-r {
+  width: 49%;
+  height: 100%;
+  background-color: aquamarine;
+  float: left;
 }
 
 .content-container .content-r {
-  width: 26%;
-  background-color: green;
+  width: 27%;
+  padding-left: 0.5rem;
+}
+
+.content-container .content-r .r-content-t {
+  height: 32%;
+  background-color: yellow;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.content-container .content-r .r-content-m {
+  height: 32%;
+  background-color: red;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 3% 0;
+}
+
+.content-container .content-r .r-content-b {
+  height: 32%;
+  background-color: blue;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 /*# sourceMappingURL=index.css.map */
