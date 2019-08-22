@@ -464,7 +464,7 @@ body .navbar-container .trapezoid-b {
 
 .content-container .content-m .m-content-b .m-content-b-l .l-trapezoid {
   position: absolute;
-  top: 2.53333rem;
+  top: 1.53333rem;
   left: -0.1rem;
   height: 2.66667rem;
   border-top: 0.35rem solid transparent;
@@ -474,7 +474,7 @@ body .navbar-container .trapezoid-b {
 
 .content-container .content-m .m-content-b .m-content-b-l .l-trapezoid-b {
   position: absolute;
-  top: 2.5rem;
+  top: 1.5rem;
   left: -0.05rem;
   height: 2.71667rem;
   border-top: 0.35rem solid transparent;
@@ -494,7 +494,7 @@ body .navbar-container .trapezoid-b {
 
 .content-container .content-m .m-content-b .m-content-b-r .r-trapezoid {
   position: absolute;
-  top: 2.53333rem;
+  top: 1.53333rem;
   right: -0.1rem;
   height: 2.66667rem;
   border-top: 0.35rem solid transparent;
@@ -504,7 +504,7 @@ body .navbar-container .trapezoid-b {
 
 .content-container .content-m .m-content-b .m-content-b-r .r-trapezoid-b {
   position: absolute;
-  top: 2.5rem;
+  top: 1.5rem;
   right: -0.05rem;
   height: 2.71667rem;
   border-top: 0.35rem solid transparent;
