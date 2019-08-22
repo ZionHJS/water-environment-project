@@ -122,7 +122,6 @@ body .navbar-container{
         border-left:px2rem(21) solid transparent;
         border-right:px2rem(21)solid transparent;
         border-bottom:px2rem(21)solid #1c2f4e;
-        box-shadow: 0 px2rem(6) px2rem(14)  #7ebdbf inset;
     }
     .trapezoid-b{
         position: absolute;
@@ -132,7 +131,6 @@ body .navbar-container{
         border-left:px2rem(21) solid transparent;
         border-right:px2rem(21) solid transparent;
         border-bottom:px2rem(21) solid #1f8bc8;
-        box-shadow: 0 px2rem(6) px2rem(14)  #7ebdbf inset;
     }
 }
 //content-container
@@ -141,6 +139,7 @@ body .navbar-container{
     width:100%;
     display:block;
     padding:px2rem(24) px2rem(45);
+    position:relative;
     // background-color:#ccc;
     .content-l, .content-m, .content-r{
         height:100%;
@@ -152,49 +151,341 @@ body .navbar-container{
     .content-l{
         width:27%;
         padding-right:px2rem(30);
+        position:relative;
         .l-content-t{
             height:32%;
-            background-color:yellow;
-            box-sizing:content-box;
+            // background-color:yellow;
+            box-sizing:border-box;
+            box-shadow: 0 0 px2rem(60) rgba(0, 204, 204, .75) inset; 
+            border:px2rem(3) solid #1f8bc8;
+            position:relative;
+            // Triangle
+            .l-sanjiao-nav-b {
+                width: 0;
+                height: 0;
+                border-bottom: px2rem(42) solid #1f8bc8;
+                border-right: px2rem(42) solid transparent;
+                position: absolute;
+                bottom:px2rem(-2);
+                left:px2rem(-2);
+            }
+            .l-sanjiao-nav {
+                width: 0;
+                height: 0;
+                border-bottom: px2rem(42) solid #1c2f4e;
+                border-right: px2rem(42) solid transparent;
+                position: absolute;
+                bottom:px2rem(-6);
+                left:px2rem(-3);
+            
+            }
+            // Triangle -teverse
+            .r-sanjiao-nav-t {
+                width: 0;
+                height: 0;
+                border-top: px2rem(42) solid #1f8bc8;
+                border-left: px2rem(42) solid transparent;
+                position: absolute;
+                top:px2rem(-3);
+                right:px2rem(-2);
+            
+            }
+            .r-sanjiao-nav {
+                width: 0;
+                height: 0;
+                border-top: px2rem(42) solid #1c2f4e;
+                border-left: px2rem(42) solid transparent;
+                position: absolute;
+                top:px2rem(-5);
+                right:px2rem(-5);
+            }
+            //Trapezoid
+            .l-trapezoid{
+                position: absolute;
+                top:px2rem(-4);
+                left:px2rem(75);
+                width: px2rem(250);
+                border-left:px2rem(21) solid transparent;
+                border-right:px2rem(21)solid transparent;
+                border-top:px2rem(36)solid #1c2f4e;
+                a{
+                    color:white;
+                    position:absolute;
+                    top:px2rem(-42);
+                    left:px2rem(48);
+                }
+            }
+            .l-trapezoid-b{
+                position: absolute;
+                top: px2rem(0);
+                left: px2rem(74);
+                width: px2rem(254);
+                border-left:px2rem(21) solid transparent;
+                border-right:px2rem(21) solid transparent;
+                border-top:px2rem(36) solid #1f8bc8;
+            }
         }
         .l-content-m{
             height:32%;
-            background-color:red;
-            box-sizing:content-box;
+            // background-color:red;
+            box-sizing:border-box;
             margin:3% 0;
+            box-shadow: 0 0 px2rem(60) rgba(0, 204, 204, .75) inset; 
+            border:px2rem(3) solid #1f8bc8;
+            position:relative;
+            // Triangle
+            .l-sanjiao-nav-b {
+                width: 0;
+                height: 0;
+                border-bottom: px2rem(42) solid #1f8bc8;
+                border-right: px2rem(42) solid transparent;
+                position: absolute;
+                bottom:px2rem(-2);
+                left:px2rem(-2);
+            }
+            .l-sanjiao-nav {
+                width: 0;
+                height: 0;
+                border-bottom: px2rem(42) solid #1c2f4e;
+                border-right: px2rem(42) solid transparent;
+                position: absolute;
+                bottom:px2rem(-6);
+                left:px2rem(-3);
+            
+            }
+            // Triangle -teverse
+            .r-sanjiao-nav-t {
+                width: 0;
+                height: 0;
+                border-top: px2rem(42) solid #1f8bc8;
+                border-left: px2rem(42) solid transparent;
+                position: absolute;
+                top:px2rem(-3);
+                right:px2rem(-2);
+            
+            }
+            .r-sanjiao-nav {
+                width: 0;
+                height: 0;
+                border-top: px2rem(42) solid #1c2f4e;
+                border-left: px2rem(42) solid transparent;
+                position: absolute;
+                top:px2rem(-5);
+                right:px2rem(-5);
+            }
+            //Trapezoid
+            .l-trapezoid{
+                position: absolute;
+                top:px2rem(-4);
+                left:px2rem(75);
+                width: px2rem(250);
+                border-left:px2rem(21) solid transparent;
+                border-right:px2rem(21)solid transparent;
+                border-top:px2rem(36)solid #1c2f4e;
+                a{
+                    color:white;
+                    position:absolute;
+                    top:px2rem(-42);
+                    left:px2rem(30);
+                }
+            }
+            .l-trapezoid-b{
+                position: absolute;
+                top: px2rem(0);
+                left: px2rem(74);
+                width: px2rem(254);
+                border-left:px2rem(21) solid transparent;
+                border-right:px2rem(21) solid transparent;
+                border-top:px2rem(36) solid #1f8bc8;
+            }
+
         }
         .l-content-b{
             height:32%;
-            background-color:blue;
-            box-sizing:content-box;
+            // background-color:blue;
+            box-sizing:border-box;
+            box-shadow: 0 0 px2rem(60) rgba(0, 204, 204, .75) inset; 
+            border:px2rem(3) solid #1f8bc8;
+            position:relative;
+            // Triangle
+            .l-sanjiao-nav-b {
+                width: 0;
+                height: 0;
+                border-bottom: px2rem(42) solid #1f8bc8;
+                border-right: px2rem(42) solid transparent;
+                position: absolute;
+                bottom:px2rem(-2);
+                left:px2rem(-2);
+            }
+            .l-sanjiao-nav {
+                width: 0;
+                height: 0;
+                border-bottom: px2rem(42) solid #1c2f4e;
+                border-right: px2rem(42) solid transparent;
+                position: absolute;
+                bottom:px2rem(-6);
+                left:px2rem(-3);
+            
+            }
+            // Triangle -teverse
+            .r-sanjiao-nav-t {
+                width: 0;
+                height: 0;
+                border-top: px2rem(42) solid #1f8bc8;
+                border-left: px2rem(42) solid transparent;
+                position: absolute;
+                top:px2rem(-3);
+                right:px2rem(-2);
+            
+            }
+            .r-sanjiao-nav {
+                width: 0;
+                height: 0;
+                border-top: px2rem(42) solid #1c2f4e;
+                border-left: px2rem(42) solid transparent;
+                position: absolute;
+                top:px2rem(-5);
+                right:px2rem(-5);
+            }
+            //Trapezoid
+            .l-trapezoid{
+                position: absolute;
+                top:px2rem(-4);
+                left:px2rem(75);
+                width: px2rem(250);
+                border-left:px2rem(21) solid transparent;
+                border-right:px2rem(21)solid transparent;
+                border-top:px2rem(36)solid #1c2f4e;
+                a{
+                    color:white;
+                    position:absolute;
+                    top:px2rem(-42);
+                    left:px2rem(54);
+                }
+            }
+            .l-trapezoid-b{
+                position: absolute;
+                top: px2rem(0);
+                left: px2rem(74);
+                width: px2rem(254);
+                border-left:px2rem(21) solid transparent;
+                border-right:px2rem(21) solid transparent;
+                border-top:px2rem(36) solid #1f8bc8;
+            }
         }
     }
     .content-m{
         width:46%;
+        position:relative;
         // background-color:purple;
         .m-content-t{
             width:100%;
-            height:49%;
-            background-color:skyblue;
-            
+            height:58.5%;
+            // background-color:skyblue;
+            box-shadow: 0 0 px2rem(60) rgba(0, 204, 204, .75) inset; 
+            border:px2rem(3) solid #1f8bc8;
+            position:relative;
+            //Trapezoid -left
+            .l-trapezoid{
+                position: absolute;
+                top:px2rem(152);
+                left:px2rem(-6);
+                height: px2rem(250);
+                border-top:px2rem(21) solid transparent;
+                border-bottom:px2rem(21)solid transparent;
+                border-left:px2rem(36)solid #1c2f4e;
+            }
+            .l-trapezoid-b{
+                position: absolute;
+                top: px2rem(150);
+                left: px2rem(-3);
+                height: px2rem(254);
+                border-top:px2rem(21) solid transparent;
+                border-bottom:px2rem(21) solid transparent;
+                border-left:px2rem(36) solid #1f8bc8;
+            }
+            //Trapezoid -right
+            .r-trapezoid{
+                position: absolute;
+                top:px2rem(152);
+                right:px2rem(-6);
+                height: px2rem(250);
+                border-top:px2rem(21) solid transparent;
+                border-bottom:px2rem(21)solid transparent;
+                border-right:px2rem(36)solid #1c2f4e;
+            }
+            .r-trapezoid-b{
+                position: absolute;
+                top: px2rem(150);
+                right: px2rem(-3);
+                height: px2rem(254);
+                border-top:px2rem(21) solid transparent;
+                border-bottom:px2rem(21) solid transparent;
+                border-right:px2rem(36) solid #1f8bc8;
+            }
         }
         .m-content-b{
             width:100%;
-            height:51%;
+            height:41%;
+            position:relative;
             // background-color:sandybrown;
             padding-top:2%;
             .m-content-b-l{
                 width:49%;
                 height:100%;
                 margin-right:2%;
-                background-color:slateblue;
+                // background-color:slateblue;
                 float:left;
+                box-shadow: 0 0 px2rem(60) rgba(0, 204, 204, .75) inset; 
+                border:px2rem(3) solid #1f8bc8;
+                position:relative;
+                //Trapezoid -left
+                .l-trapezoid{
+                    position: absolute;
+                    top:px2rem(152);
+                    left:px2rem(-6);
+                    height: px2rem(160);
+                    border-top:px2rem(21) solid transparent;
+                    border-bottom:px2rem(21)solid transparent;
+                    border-left:px2rem(36)solid #1c2f4e;
+                }
+                .l-trapezoid-b{
+                    position: absolute;
+                    top: px2rem(150);
+                    left: px2rem(-3);
+                    height: px2rem(163);
+                    border-top:px2rem(21) solid transparent;
+                    border-bottom:px2rem(21) solid transparent;
+                    border-left:px2rem(36) solid #1f8bc8;
+                }
             }
             .m-content-b-r{
                 width:49%;
                 height:100%;
-                background-color:aquamarine;
+                // background-color:aquamarine;
                 float:left;
+                box-shadow: 0 0 px2rem(60) rgba(0, 204, 204, .75) inset; 
+                border:px2rem(3) solid #1f8bc8;
+                position:relative;
+                //Trapezoid -right
+                .r-trapezoid{
+                    position: absolute;
+                    top:px2rem(152);
+                    right:px2rem(-6);
+                    height: px2rem(160);
+                    border-top:px2rem(21) solid transparent;
+                    border-bottom:px2rem(21)solid transparent;
+                    border-right:px2rem(36)solid #1c2f4e;
+                }
+                .r-trapezoid-b{
+                    position: absolute;
+                    top: px2rem(150);
+                    right: px2rem(-3);
+                    height: px2rem(163);
+                    border-top:px2rem(21) solid transparent;
+                    border-bottom:px2rem(21) solid transparent;
+                    border-right:px2rem(36) solid #1f8bc8;
+                }
             }
         }
     }
@@ -202,21 +493,226 @@ body .navbar-container{
         width:27%;
         // background-color:green;
         padding-left:px2rem(30);
+        position:relative;
         .r-content-t{
             height:32%;
-            background-color:yellow;
+            // background-color:yellow;
             box-sizing:content-box;
+            box-shadow: 0 0 px2rem(60) rgba(0, 204, 204, .75) inset; 
+            border:px2rem(3) solid #1f8bc8;
+            position:relative;
+            // Triangle
+            .l-sanjiao-nav-b {
+                width: 0;
+                height: 0;
+                border-bottom: px2rem(42) solid #1f8bc8;
+                border-left: px2rem(42) solid transparent;
+                position: absolute;
+                bottom:px2rem(-2);
+                right:px2rem(-2);
+            }
+            .l-sanjiao-nav {
+                width: 0;
+                height: 0;
+                border-bottom: px2rem(42) solid #1c2f4e;
+                border-left: px2rem(42) solid transparent;
+                position: absolute;
+                bottom:px2rem(-6);
+                right:px2rem(-3);
+            
+            }
+            // Triangle -teverse
+            .r-sanjiao-nav-t {
+                width: 0;
+                height: 0;
+                border-top: px2rem(42) solid #1f8bc8;
+                border-right: px2rem(42) solid transparent;
+                position: absolute;
+                top:px2rem(-3);
+                left:px2rem(-2);
+            
+            }
+            .r-sanjiao-nav {
+                width: 0;
+                height: 0;
+                border-top: px2rem(42) solid #1c2f4e;
+                border-right: px2rem(42) solid transparent;
+                position: absolute;
+                top:px2rem(-5);
+                left:px2rem(-5);
+            }
+            //Trapezoid
+            .l-trapezoid{
+                position: absolute;
+                top:px2rem(-4);
+                right:px2rem(75);
+                width: px2rem(250);
+                border-left:px2rem(21) solid transparent;
+                border-right:px2rem(21)solid transparent;
+                border-top:px2rem(36)solid #1c2f4e;
+                a{
+                    color:white;
+                    position:absolute;
+                    top:px2rem(-36);
+                    left:px2rem(72);
+                }
+            }
+            .l-trapezoid-b{
+                position: absolute;
+                top: px2rem(0);
+                right: px2rem(74);
+                width: px2rem(254);
+                border-left:px2rem(21) solid transparent;
+                border-right:px2rem(21) solid transparent;
+                border-top:px2rem(36) solid #1f8bc8;
+            }
         }
         .r-content-m{
             height:32%;
-            background-color:red;
+            // background-color:red;
             box-sizing:content-box;
             margin:3% 0;
+            box-shadow: 0 0 px2rem(60) rgba(0, 204, 204, .75) inset; 
+            border:px2rem(3) solid #1f8bc8;
+            position:relative;
+            // Triangle
+            .l-sanjiao-nav-b {
+                width: 0;
+                height: 0;
+                border-bottom: px2rem(42) solid #1f8bc8;
+                border-left: px2rem(42) solid transparent;
+                position: absolute;
+                bottom:px2rem(-2);
+                right:px2rem(-2);
+            }
+            .l-sanjiao-nav {
+                width: 0;
+                height: 0;
+                border-bottom: px2rem(42) solid #1c2f4e;
+                border-left: px2rem(42) solid transparent;
+                position: absolute;
+                bottom:px2rem(-6);
+                right:px2rem(-3);
+            
+            }
+            // Triangle -teverse
+            .r-sanjiao-nav-t {
+                width: 0;
+                height: 0;
+                border-top: px2rem(42) solid #1f8bc8;
+                border-right: px2rem(42) solid transparent;
+                position: absolute;
+                top:px2rem(-3);
+                left:px2rem(-2);
+            
+            }
+            .r-sanjiao-nav {
+                width: 0;
+                height: 0;
+                border-top: px2rem(42) solid #1c2f4e;
+                border-right: px2rem(42) solid transparent;
+                position: absolute;
+                top:px2rem(-5);
+                left:px2rem(-5);
+            }
+            //Trapezoid
+            .l-trapezoid{
+                position: absolute;
+                top:px2rem(-4);
+                right:px2rem(75);
+                width: px2rem(250);
+                border-left:px2rem(21) solid transparent;
+                border-right:px2rem(21)solid transparent;
+                border-top:px2rem(36)solid #1c2f4e;
+                a{
+                    color:white;
+                    position:absolute;
+                    top:px2rem(-42);
+                    left:px2rem(42);
+                }
+            }
+            .l-trapezoid-b{
+                position: absolute;
+                top: px2rem(0);
+                right: px2rem(74);
+                width: px2rem(254);
+                border-left:px2rem(21) solid transparent;
+                border-right:px2rem(21) solid transparent;
+                border-top:px2rem(36) solid #1f8bc8;
+            }
         }
         .r-content-b{
             height:32%;
-            background-color:blue;
+            // background-color:blue;
             box-sizing:content-box;
+            box-shadow: 0 0 px2rem(60) rgba(0, 204, 204, .75) inset; 
+            border:px2rem(3) solid #1f8bc8;
+            position:relative;
+            // Triangle
+            .l-sanjiao-nav-b {
+                width: 0;
+                height: 0;
+                border-bottom: px2rem(42) solid #1f8bc8;
+                border-left: px2rem(42) solid transparent;
+                position: absolute;
+                bottom:px2rem(-2);
+                right:px2rem(-2);
+            }
+            .l-sanjiao-nav {
+                width: 0;
+                height: 0;
+                border-bottom: px2rem(42) solid #1c2f4e;
+                border-left: px2rem(42) solid transparent;
+                position: absolute;
+                bottom:px2rem(-6);
+                right:px2rem(-3);
+            
+            }
+            // Triangle -teverse
+            .r-sanjiao-nav-t {
+                width: 0;
+                height: 0;
+                border-top: px2rem(42) solid #1f8bc8;
+                border-right: px2rem(42) solid transparent;
+                position: absolute;
+                top:px2rem(-3);
+                left:px2rem(-2);
+            
+            }
+            .r-sanjiao-nav {
+                width: 0;
+                height: 0;
+                border-top: px2rem(42) solid #1c2f4e;
+                border-right: px2rem(42) solid transparent;
+                position: absolute;
+                top:px2rem(-5);
+                left:px2rem(-5);
+            }
+            //Trapezoid
+            .l-trapezoid{
+                position: absolute;
+                top:px2rem(-4);
+                right:px2rem(75);
+                width: px2rem(250);
+                border-left:px2rem(21) solid transparent;
+                border-right:px2rem(21)solid transparent;
+                border-top:px2rem(36)solid #1c2f4e;
+                a{
+                    color:white;
+                    position:absolute;
+                    top:px2rem(-42);
+                    left:px2rem(57);
+                }
+            }
+            .l-trapezoid-b{
+                position: absolute;
+                top: px2rem(0);
+                right: px2rem(74);
+                width: px2rem(254);
+                border-left:px2rem(21) solid transparent;
+                border-right:px2rem(21) solid transparent;
+                border-top:px2rem(36) solid #1f8bc8;
+            }
         }
     }
 }

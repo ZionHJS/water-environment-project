@@ -113,7 +113,6 @@ body .navbar-container .trapezoid {
   border-left: 0.35rem solid transparent;
   border-right: 0.35rem solid transparent;
   border-bottom: 0.35rem solid #1c2f4e;
-  box-shadow: 0 0.1rem 0.23333rem #7ebdbf inset;
 }
 
 body .navbar-container .trapezoid-b {
@@ -124,7 +123,6 @@ body .navbar-container .trapezoid-b {
   border-left: 0.35rem solid transparent;
   border-right: 0.35rem solid transparent;
   border-bottom: 0.35rem solid #1f8bc8;
-  box-shadow: 0 0.1rem 0.23333rem #7ebdbf inset;
 }
 
 .content-container {
@@ -132,6 +130,7 @@ body .navbar-container .trapezoid-b {
   width: 100%;
   display: block;
   padding: 0.4rem 0.75rem;
+  position: relative;
 }
 
 .content-container .content-l, .content-container .content-m, .content-container .content-r {
@@ -144,40 +143,292 @@ body .navbar-container .trapezoid-b {
 .content-container .content-l {
   width: 27%;
   padding-right: 0.5rem;
+  position: relative;
 }
 
 .content-container .content-l .l-content-t {
   height: 32%;
-  background-color: yellow;
-  box-sizing: content-box;
+  box-sizing: border-box;
+  box-shadow: 0 0 1rem rgba(0, 204, 204, 0.75) inset;
+  border: 0.05rem solid #1f8bc8;
+  position: relative;
+}
+
+.content-container .content-l .l-content-t .l-sanjiao-nav-b {
+  width: 0;
+  height: 0;
+  border-bottom: 0.7rem solid #1f8bc8;
+  border-right: 0.7rem solid transparent;
+  position: absolute;
+  bottom: -0.03333rem;
+  left: -0.03333rem;
+}
+
+.content-container .content-l .l-content-t .l-sanjiao-nav {
+  width: 0;
+  height: 0;
+  border-bottom: 0.7rem solid #1c2f4e;
+  border-right: 0.7rem solid transparent;
+  position: absolute;
+  bottom: -0.1rem;
+  left: -0.05rem;
+}
+
+.content-container .content-l .l-content-t .r-sanjiao-nav-t {
+  width: 0;
+  height: 0;
+  border-top: 0.7rem solid #1f8bc8;
+  border-left: 0.7rem solid transparent;
+  position: absolute;
+  top: -0.05rem;
+  right: -0.03333rem;
+}
+
+.content-container .content-l .l-content-t .r-sanjiao-nav {
+  width: 0;
+  height: 0;
+  border-top: 0.7rem solid #1c2f4e;
+  border-left: 0.7rem solid transparent;
+  position: absolute;
+  top: -0.08333rem;
+  right: -0.08333rem;
+}
+
+.content-container .content-l .l-content-t .l-trapezoid {
+  position: absolute;
+  top: -0.06667rem;
+  left: 1.25rem;
+  width: 4.16667rem;
+  border-left: 0.35rem solid transparent;
+  border-right: 0.35rem solid transparent;
+  border-top: 0.6rem solid #1c2f4e;
+}
+
+.content-container .content-l .l-content-t .l-trapezoid a {
+  color: white;
+  position: absolute;
+  top: -0.7rem;
+  left: 0.8rem;
+}
+
+.content-container .content-l .l-content-t .l-trapezoid-b {
+  position: absolute;
+  top: 0rem;
+  left: 1.23333rem;
+  width: 4.23333rem;
+  border-left: 0.35rem solid transparent;
+  border-right: 0.35rem solid transparent;
+  border-top: 0.6rem solid #1f8bc8;
 }
 
 .content-container .content-l .l-content-m {
   height: 32%;
-  background-color: red;
-  box-sizing: content-box;
+  box-sizing: border-box;
   margin: 3% 0;
+  box-shadow: 0 0 1rem rgba(0, 204, 204, 0.75) inset;
+  border: 0.05rem solid #1f8bc8;
+  position: relative;
+}
+
+.content-container .content-l .l-content-m .l-sanjiao-nav-b {
+  width: 0;
+  height: 0;
+  border-bottom: 0.7rem solid #1f8bc8;
+  border-right: 0.7rem solid transparent;
+  position: absolute;
+  bottom: -0.03333rem;
+  left: -0.03333rem;
+}
+
+.content-container .content-l .l-content-m .l-sanjiao-nav {
+  width: 0;
+  height: 0;
+  border-bottom: 0.7rem solid #1c2f4e;
+  border-right: 0.7rem solid transparent;
+  position: absolute;
+  bottom: -0.1rem;
+  left: -0.05rem;
+}
+
+.content-container .content-l .l-content-m .r-sanjiao-nav-t {
+  width: 0;
+  height: 0;
+  border-top: 0.7rem solid #1f8bc8;
+  border-left: 0.7rem solid transparent;
+  position: absolute;
+  top: -0.05rem;
+  right: -0.03333rem;
+}
+
+.content-container .content-l .l-content-m .r-sanjiao-nav {
+  width: 0;
+  height: 0;
+  border-top: 0.7rem solid #1c2f4e;
+  border-left: 0.7rem solid transparent;
+  position: absolute;
+  top: -0.08333rem;
+  right: -0.08333rem;
+}
+
+.content-container .content-l .l-content-m .l-trapezoid {
+  position: absolute;
+  top: -0.06667rem;
+  left: 1.25rem;
+  width: 4.16667rem;
+  border-left: 0.35rem solid transparent;
+  border-right: 0.35rem solid transparent;
+  border-top: 0.6rem solid #1c2f4e;
+}
+
+.content-container .content-l .l-content-m .l-trapezoid a {
+  color: white;
+  position: absolute;
+  top: -0.7rem;
+  left: 0.5rem;
+}
+
+.content-container .content-l .l-content-m .l-trapezoid-b {
+  position: absolute;
+  top: 0rem;
+  left: 1.23333rem;
+  width: 4.23333rem;
+  border-left: 0.35rem solid transparent;
+  border-right: 0.35rem solid transparent;
+  border-top: 0.6rem solid #1f8bc8;
 }
 
 .content-container .content-l .l-content-b {
   height: 32%;
-  background-color: blue;
-  box-sizing: content-box;
+  box-sizing: border-box;
+  box-shadow: 0 0 1rem rgba(0, 204, 204, 0.75) inset;
+  border: 0.05rem solid #1f8bc8;
+  position: relative;
+}
+
+.content-container .content-l .l-content-b .l-sanjiao-nav-b {
+  width: 0;
+  height: 0;
+  border-bottom: 0.7rem solid #1f8bc8;
+  border-right: 0.7rem solid transparent;
+  position: absolute;
+  bottom: -0.03333rem;
+  left: -0.03333rem;
+}
+
+.content-container .content-l .l-content-b .l-sanjiao-nav {
+  width: 0;
+  height: 0;
+  border-bottom: 0.7rem solid #1c2f4e;
+  border-right: 0.7rem solid transparent;
+  position: absolute;
+  bottom: -0.1rem;
+  left: -0.05rem;
+}
+
+.content-container .content-l .l-content-b .r-sanjiao-nav-t {
+  width: 0;
+  height: 0;
+  border-top: 0.7rem solid #1f8bc8;
+  border-left: 0.7rem solid transparent;
+  position: absolute;
+  top: -0.05rem;
+  right: -0.03333rem;
+}
+
+.content-container .content-l .l-content-b .r-sanjiao-nav {
+  width: 0;
+  height: 0;
+  border-top: 0.7rem solid #1c2f4e;
+  border-left: 0.7rem solid transparent;
+  position: absolute;
+  top: -0.08333rem;
+  right: -0.08333rem;
+}
+
+.content-container .content-l .l-content-b .l-trapezoid {
+  position: absolute;
+  top: -0.06667rem;
+  left: 1.25rem;
+  width: 4.16667rem;
+  border-left: 0.35rem solid transparent;
+  border-right: 0.35rem solid transparent;
+  border-top: 0.6rem solid #1c2f4e;
+}
+
+.content-container .content-l .l-content-b .l-trapezoid a {
+  color: white;
+  position: absolute;
+  top: -0.7rem;
+  left: 0.9rem;
+}
+
+.content-container .content-l .l-content-b .l-trapezoid-b {
+  position: absolute;
+  top: 0rem;
+  left: 1.23333rem;
+  width: 4.23333rem;
+  border-left: 0.35rem solid transparent;
+  border-right: 0.35rem solid transparent;
+  border-top: 0.6rem solid #1f8bc8;
 }
 
 .content-container .content-m {
   width: 46%;
+  position: relative;
 }
 
 .content-container .content-m .m-content-t {
   width: 100%;
-  height: 49%;
-  background-color: skyblue;
+  height: 58.5%;
+  box-shadow: 0 0 1rem rgba(0, 204, 204, 0.75) inset;
+  border: 0.05rem solid #1f8bc8;
+  position: relative;
+}
+
+.content-container .content-m .m-content-t .l-trapezoid {
+  position: absolute;
+  top: 2.53333rem;
+  left: -0.1rem;
+  height: 4.16667rem;
+  border-top: 0.35rem solid transparent;
+  border-bottom: 0.35rem solid transparent;
+  border-left: 0.6rem solid #1c2f4e;
+}
+
+.content-container .content-m .m-content-t .l-trapezoid-b {
+  position: absolute;
+  top: 2.5rem;
+  left: -0.05rem;
+  height: 4.23333rem;
+  border-top: 0.35rem solid transparent;
+  border-bottom: 0.35rem solid transparent;
+  border-left: 0.6rem solid #1f8bc8;
+}
+
+.content-container .content-m .m-content-t .r-trapezoid {
+  position: absolute;
+  top: 2.53333rem;
+  right: -0.1rem;
+  height: 4.16667rem;
+  border-top: 0.35rem solid transparent;
+  border-bottom: 0.35rem solid transparent;
+  border-right: 0.6rem solid #1c2f4e;
+}
+
+.content-container .content-m .m-content-t .r-trapezoid-b {
+  position: absolute;
+  top: 2.5rem;
+  right: -0.05rem;
+  height: 4.23333rem;
+  border-top: 0.35rem solid transparent;
+  border-bottom: 0.35rem solid transparent;
+  border-right: 0.6rem solid #1f8bc8;
 }
 
 .content-container .content-m .m-content-b {
   width: 100%;
-  height: 51%;
+  height: 41%;
+  position: relative;
   padding-top: 2%;
 }
 
@@ -185,37 +436,289 @@ body .navbar-container .trapezoid-b {
   width: 49%;
   height: 100%;
   margin-right: 2%;
-  background-color: slateblue;
   float: left;
+  box-shadow: 0 0 1rem rgba(0, 204, 204, 0.75) inset;
+  border: 0.05rem solid #1f8bc8;
+  position: relative;
+}
+
+.content-container .content-m .m-content-b .m-content-b-l .l-trapezoid {
+  position: absolute;
+  top: 2.53333rem;
+  left: -0.1rem;
+  height: 2.66667rem;
+  border-top: 0.35rem solid transparent;
+  border-bottom: 0.35rem solid transparent;
+  border-left: 0.6rem solid #1c2f4e;
+}
+
+.content-container .content-m .m-content-b .m-content-b-l .l-trapezoid-b {
+  position: absolute;
+  top: 2.5rem;
+  left: -0.05rem;
+  height: 2.71667rem;
+  border-top: 0.35rem solid transparent;
+  border-bottom: 0.35rem solid transparent;
+  border-left: 0.6rem solid #1f8bc8;
 }
 
 .content-container .content-m .m-content-b .m-content-b-r {
   width: 49%;
   height: 100%;
-  background-color: aquamarine;
   float: left;
+  box-shadow: 0 0 1rem rgba(0, 204, 204, 0.75) inset;
+  border: 0.05rem solid #1f8bc8;
+  position: relative;
+}
+
+.content-container .content-m .m-content-b .m-content-b-r .r-trapezoid {
+  position: absolute;
+  top: 2.53333rem;
+  right: -0.1rem;
+  height: 2.66667rem;
+  border-top: 0.35rem solid transparent;
+  border-bottom: 0.35rem solid transparent;
+  border-right: 0.6rem solid #1c2f4e;
+}
+
+.content-container .content-m .m-content-b .m-content-b-r .r-trapezoid-b {
+  position: absolute;
+  top: 2.5rem;
+  right: -0.05rem;
+  height: 2.71667rem;
+  border-top: 0.35rem solid transparent;
+  border-bottom: 0.35rem solid transparent;
+  border-right: 0.6rem solid #1f8bc8;
 }
 
 .content-container .content-r {
   width: 27%;
   padding-left: 0.5rem;
+  position: relative;
 }
 
 .content-container .content-r .r-content-t {
   height: 32%;
-  background-color: yellow;
   box-sizing: content-box;
+  box-shadow: 0 0 1rem rgba(0, 204, 204, 0.75) inset;
+  border: 0.05rem solid #1f8bc8;
+  position: relative;
+}
+
+.content-container .content-r .r-content-t .l-sanjiao-nav-b {
+  width: 0;
+  height: 0;
+  border-bottom: 0.7rem solid #1f8bc8;
+  border-left: 0.7rem solid transparent;
+  position: absolute;
+  bottom: -0.03333rem;
+  right: -0.03333rem;
+}
+
+.content-container .content-r .r-content-t .l-sanjiao-nav {
+  width: 0;
+  height: 0;
+  border-bottom: 0.7rem solid #1c2f4e;
+  border-left: 0.7rem solid transparent;
+  position: absolute;
+  bottom: -0.1rem;
+  right: -0.05rem;
+}
+
+.content-container .content-r .r-content-t .r-sanjiao-nav-t {
+  width: 0;
+  height: 0;
+  border-top: 0.7rem solid #1f8bc8;
+  border-right: 0.7rem solid transparent;
+  position: absolute;
+  top: -0.05rem;
+  left: -0.03333rem;
+}
+
+.content-container .content-r .r-content-t .r-sanjiao-nav {
+  width: 0;
+  height: 0;
+  border-top: 0.7rem solid #1c2f4e;
+  border-right: 0.7rem solid transparent;
+  position: absolute;
+  top: -0.08333rem;
+  left: -0.08333rem;
+}
+
+.content-container .content-r .r-content-t .l-trapezoid {
+  position: absolute;
+  top: -0.06667rem;
+  right: 1.25rem;
+  width: 4.16667rem;
+  border-left: 0.35rem solid transparent;
+  border-right: 0.35rem solid transparent;
+  border-top: 0.6rem solid #1c2f4e;
+}
+
+.content-container .content-r .r-content-t .l-trapezoid a {
+  color: white;
+  position: absolute;
+  top: -0.6rem;
+  left: 1.2rem;
+}
+
+.content-container .content-r .r-content-t .l-trapezoid-b {
+  position: absolute;
+  top: 0rem;
+  right: 1.23333rem;
+  width: 4.23333rem;
+  border-left: 0.35rem solid transparent;
+  border-right: 0.35rem solid transparent;
+  border-top: 0.6rem solid #1f8bc8;
 }
 
 .content-container .content-r .r-content-m {
   height: 32%;
-  background-color: red;
   box-sizing: content-box;
   margin: 3% 0;
+  box-shadow: 0 0 1rem rgba(0, 204, 204, 0.75) inset;
+  border: 0.05rem solid #1f8bc8;
+  position: relative;
+}
+
+.content-container .content-r .r-content-m .l-sanjiao-nav-b {
+  width: 0;
+  height: 0;
+  border-bottom: 0.7rem solid #1f8bc8;
+  border-left: 0.7rem solid transparent;
+  position: absolute;
+  bottom: -0.03333rem;
+  right: -0.03333rem;
+}
+
+.content-container .content-r .r-content-m .l-sanjiao-nav {
+  width: 0;
+  height: 0;
+  border-bottom: 0.7rem solid #1c2f4e;
+  border-left: 0.7rem solid transparent;
+  position: absolute;
+  bottom: -0.1rem;
+  right: -0.05rem;
+}
+
+.content-container .content-r .r-content-m .r-sanjiao-nav-t {
+  width: 0;
+  height: 0;
+  border-top: 0.7rem solid #1f8bc8;
+  border-right: 0.7rem solid transparent;
+  position: absolute;
+  top: -0.05rem;
+  left: -0.03333rem;
+}
+
+.content-container .content-r .r-content-m .r-sanjiao-nav {
+  width: 0;
+  height: 0;
+  border-top: 0.7rem solid #1c2f4e;
+  border-right: 0.7rem solid transparent;
+  position: absolute;
+  top: -0.08333rem;
+  left: -0.08333rem;
+}
+
+.content-container .content-r .r-content-m .l-trapezoid {
+  position: absolute;
+  top: -0.06667rem;
+  right: 1.25rem;
+  width: 4.16667rem;
+  border-left: 0.35rem solid transparent;
+  border-right: 0.35rem solid transparent;
+  border-top: 0.6rem solid #1c2f4e;
+}
+
+.content-container .content-r .r-content-m .l-trapezoid a {
+  color: white;
+  position: absolute;
+  top: -0.7rem;
+  left: 0.7rem;
+}
+
+.content-container .content-r .r-content-m .l-trapezoid-b {
+  position: absolute;
+  top: 0rem;
+  right: 1.23333rem;
+  width: 4.23333rem;
+  border-left: 0.35rem solid transparent;
+  border-right: 0.35rem solid transparent;
+  border-top: 0.6rem solid #1f8bc8;
 }
 
 .content-container .content-r .r-content-b {
   height: 32%;
-  background-color: blue;
   box-sizing: content-box;
+  box-shadow: 0 0 1rem rgba(0, 204, 204, 0.75) inset;
+  border: 0.05rem solid #1f8bc8;
+  position: relative;
+}
+
+.content-container .content-r .r-content-b .l-sanjiao-nav-b {
+  width: 0;
+  height: 0;
+  border-bottom: 0.7rem solid #1f8bc8;
+  border-left: 0.7rem solid transparent;
+  position: absolute;
+  bottom: -0.03333rem;
+  right: -0.03333rem;
+}
+
+.content-container .content-r .r-content-b .l-sanjiao-nav {
+  width: 0;
+  height: 0;
+  border-bottom: 0.7rem solid #1c2f4e;
+  border-left: 0.7rem solid transparent;
+  position: absolute;
+  bottom: -0.1rem;
+  right: -0.05rem;
+}
+
+.content-container .content-r .r-content-b .r-sanjiao-nav-t {
+  width: 0;
+  height: 0;
+  border-top: 0.7rem solid #1f8bc8;
+  border-right: 0.7rem solid transparent;
+  position: absolute;
+  top: -0.05rem;
+  left: -0.03333rem;
+}
+
+.content-container .content-r .r-content-b .r-sanjiao-nav {
+  width: 0;
+  height: 0;
+  border-top: 0.7rem solid #1c2f4e;
+  border-right: 0.7rem solid transparent;
+  position: absolute;
+  top: -0.08333rem;
+  left: -0.08333rem;
+}
+
+.content-container .content-r .r-content-b .l-trapezoid {
+  position: absolute;
+  top: -0.06667rem;
+  right: 1.25rem;
+  width: 4.16667rem;
+  border-left: 0.35rem solid transparent;
+  border-right: 0.35rem solid transparent;
+  border-top: 0.6rem solid #1c2f4e;
+}
+
+.content-container .content-r .r-content-b .l-trapezoid a {
+  color: white;
+  position: absolute;
+  top: -0.7rem;
+  left: 0.95rem;
+}
+
+.content-container .content-r .r-content-b .l-trapezoid-b {
+  position: absolute;
+  top: 0rem;
+  right: 1.23333rem;
+  width: 4.23333rem;
+  border-left: 0.35rem solid transparent;
+  border-right: 0.35rem solid transparent;
+  border-top: 0.6rem solid #1f8bc8;
 }
