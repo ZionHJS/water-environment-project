@@ -39,6 +39,7 @@
     <meta name="x5-page-mode" content="app">
     <meta name="App-Config" content="fullscreen=yes, useHistoryState=yes,transition=yes">
     <script src="./js/jQuery-3.4-1.js"></script>
+    <script src="./lib/konva-master/konva.js"></script>
 
     <link rel="stylesheet" href="./css/bootstrap-3.3.7/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./css/common.css">
@@ -188,7 +189,9 @@
                    <div class="r-trapezoid"></div>
 
                    <!--graph-->
-                   <div class="m-graph-wraper-b-r"></div>
+                   <div class="m-graph-wraper-b-r" id="m-graph-wraper-b-r">
+                       <!-- <canvas id='pieChart-01'></canvas> -->
+                   </div>
                 </div>
             </div>
         </div>
@@ -243,6 +246,10 @@
             </div>
         </div>
     </div>
+
+    <script src="./js/pieChart.js"></script>
+    <script src="./js/canvas-stage.js"></script>
+
     <script src="./css/bootstrap-3.3.7/dist/js/bootstrap.js"></script>
     <script src="./js/hotcss.js"></script>
 </body>
