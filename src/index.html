@@ -39,7 +39,7 @@
     <meta name="x5-page-mode" content="app">
     <meta name="App-Config" content="fullscreen=yes, useHistoryState=yes,transition=yes">
     <script src="./js/jQuery-3.4-1.js"></script>
-    <script src="./lib/konva-master/konva.js"></script>
+    <script src="./lib/echarts.min.js"></script>
 
     <link rel="stylesheet" href="./css/bootstrap-3.3.7/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./css/common.css">
@@ -112,7 +112,7 @@
 
     <!-- Content Area -->
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 content-container">
-        <div class="col-xs-12 col-sm-12 col-md-3.5 col-lg-3.5 content-l">
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 content-l">
             <div class="l-content-t">
                 <!--triangle-->
                 <div class="l-sanjiao-nav-b"></div>
@@ -162,7 +162,7 @@
                 <div class="l-graph-wraper-b"></div>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 content-m">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 content-m">
             <div class="m-content-t">
                 <!--left-trapezoid-->
                 <div class="l-trapezoid-b"></div>
@@ -181,7 +181,9 @@
                     <div class="l-trapezoid"></div>
                     
                     <!--graph-->
-                    <div class="m-graph-wraper-b-l"></div>
+                    <div class="m-graph-wraper-b-l" id="m-graph-wraper-b-l">
+                        <!-- <canvas id='pieChart-01'></canvas> -->
+                    </div>
                 </div>
                 <div class="m-content-b-r">
                     <!--right-trapezoid-->
@@ -189,13 +191,13 @@
                    <div class="r-trapezoid"></div>
 
                    <!--graph-->
-                   <div class="m-graph-wraper-b-r" id="m-graph-wraper-b-r">
+                    <div class="m-graph-wraper-b-r" id="m-graph-wraper-b-r">
                        <!-- <canvas id='pieChart-01'></canvas> -->
-                   </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-3.5 col-lg-3.5 content-r">
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 content-r">
             <div class="r-content-t">
                 <!--triangle-->
                 <div class="l-sanjiao-nav-b"></div>
@@ -248,7 +250,6 @@
     </div>
 
     <script src="./js/pieChart.js"></script>
-    <script src="./js/canvas-stage.js"></script>
 
     <script src="./css/bootstrap-3.3.7/dist/js/bootstrap.js"></script>
     <script src="./js/hotcss.js"></script>
