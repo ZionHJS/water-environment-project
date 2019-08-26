@@ -694,6 +694,11 @@ body .navbar-container .trapezoid-b {
   position: relative;
 }
 
+.content-container .content-r .r-content-b .r-graph-wraper-b-b {
+  width: 95%;
+  height: 270px;
+}
+
 .content-container .content-r .r-content-b .l-sanjiao-nav-b {
   width: 0;
   height: 0;

@@ -690,6 +690,11 @@ body .navbar-container{
             box-shadow: 0 0 px2rem(60) rgba(0, 204, 204, .75) inset; 
             border:px2rem(3) solid #1f8bc8;
             position:relative;
+            .r-graph-wraper-b-b{
+                width:95%;
+                height:270px;
+                // background-color:yellow;
+            }
             // Triangle
             .l-sanjiao-nav-b {
                 width: 0;
