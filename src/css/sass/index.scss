@@ -385,6 +385,11 @@ body .navbar-container{
             box-shadow: 0 0 px2rem(60) rgba(0, 204, 204, .75) inset; 
             border:px2rem(3) solid #1f8bc8;
             position:relative;
+            .m-graph-wraper-t{
+                width:98%;
+                height:495px;
+                background:yellow;
+            }
             //Trapezoid -left
             .l-trapezoid{
                 position: absolute;

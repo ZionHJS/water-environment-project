@@ -382,6 +382,12 @@ body .navbar-container .trapezoid-b {
   position: relative;
 }
 
+.content-container .content-m .m-content-t .m-graph-wraper-t {
+  width: 98%;
+  height: 495px;
+  background: yellow;
+}
+
 .content-container .content-m .m-content-t .l-trapezoid {
   position: absolute;
   top: 2.53333rem;
