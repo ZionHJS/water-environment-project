@@ -152,6 +152,11 @@ body .navbar-container .trapezoid-b {
   position: relative;
 }
 
+.content-container .content-l .l-content-t .l-graph-wraper-t {
+  width: 96%;
+  height: 270px;
+}
+
 .content-container .content-l .l-content-t .l-sanjiao-nav-b {
   width: 0;
   height: 0;
@@ -228,6 +233,11 @@ body .navbar-container .trapezoid-b {
   position: relative;
 }
 
+.content-container .content-l .l-content-m .l-graph-wraper-m {
+  width: 100%;
+  height: 270px;
+}
+
 .content-container .content-l .l-content-m .l-sanjiao-nav-b {
   width: 0;
   height: 0;
@@ -301,6 +311,11 @@ body .navbar-container .trapezoid-b {
   box-shadow: 0 0 1rem rgba(0, 204, 204, 0.75) inset;
   border: 0.05rem solid #1f8bc8;
   position: relative;
+}
+
+.content-container .content-l .l-content-b .l-graph-wraper-b {
+  width: 100%;
+  height: 270px;
 }
 
 .content-container .content-l .l-content-b .l-sanjiao-nav-b {
@@ -385,7 +400,6 @@ body .navbar-container .trapezoid-b {
 .content-container .content-m .m-content-t .m-graph-wraper-t {
   width: 98%;
   height: 495px;
-  background: yellow;
 }
 
 .content-container .content-m .m-content-t .l-trapezoid {
@@ -519,6 +533,11 @@ body .navbar-container .trapezoid-b {
   position: relative;
 }
 
+.content-container .content-r .r-content-t .r-graph-wraper-t {
+  width: 90%;
+  height: 270px;
+}
+
 .content-container .content-r .r-content-t .l-sanjiao-nav-b {
   width: 0;
   height: 0;
@@ -593,6 +612,11 @@ body .navbar-container .trapezoid-b {
   box-shadow: 0 0 1rem rgba(0, 204, 204, 0.75) inset;
   border: 0.05rem solid #1f8bc8;
   position: relative;
+}
+
+.content-container .content-r .r-content-m .r-graph-wraper-b-m {
+  width: 100%;
+  height: 270px;
 }
 
 .content-container .content-r .r-content-m .l-sanjiao-nav-b {
