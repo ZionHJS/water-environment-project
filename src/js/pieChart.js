@@ -47,32 +47,42 @@ PieChart.prototype = {
             //绘制文本的角度
             var textAngle = tempAngle + 1 / 2 * angle;
 
-            //绘制百分比的文本
+            //绘制文本文字
             var text = new Konva.Text({
                 x: (self.r + 30) * Math.cos(Math.PI / 180 * textAngle),  //1rad = 180/PI
                 y: (self.r + 30) * Math.sin(Math.PI / 180 * textAngle),
-                text: item.value * 100 + '%',
+                text: item.name,
                 fill: item.color,
             });
+            self.textGroup.add(text);
 
             //根据角度判断设置文字的位置 使左边的文字向左移动一些
             if (textAngle > 90 && textAngle < 270) {
                 text.x(text.x() - text.getWidth());
             }
+            
+            //绘制文本文字相对应的线条
+            var line = new Konva.Line({
+                x:0,
+                y:0,
+                points:[0,0,(self.r+20) * Math.cos(Math.PI / 180 * textAngle), (self.r+20) * Math.sin(Math.PI / 180 * textAngle)],
+                stroke:item.color,
+                tension:1,
+            });
+            self.textGroup.add(line);
 
-            self.textGroup.add(text);
             tempAngle += angle;
         });
 
-        //绘制圆环的线
-        var cir = new Konva.Circle({
-            x: 0,
-            y: 0,
-            radius: this.r+3,
-            stroke: '#ccc',
-            strokeWidth: 1
-        });
-        this.group.add(cir);
+        // //绘制圆环的线
+        // var cir = new Konva.Circle({
+        //     x: 0,
+        //     y: 0,
+        //     radius: this.r+3,
+        //     stroke: '#ccc',
+        //     strokeWidth: 1
+        // });
+        // this.group.add(cir);
 
         this._animteIndex = 0;
     },
